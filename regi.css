@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
     height: 50vh;
 }
 
@@ -35,4 +35,11 @@ input:focus,
 #loginbtn,
 #btn {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .login-sub-container {
+        width: 90%;
+    }
+
 }

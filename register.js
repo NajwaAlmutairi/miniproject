@@ -47,7 +47,6 @@ btn.addEventListener("click", () => {
                 input2.value = '';
                 inputEmail.value = '';
 
-
             });
     }
 })
