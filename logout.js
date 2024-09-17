@@ -3,7 +3,6 @@ let text = document.getElementById('text');
 let usernamePlaceholder = document.getElementById('username-placeholder');
 let logout = document.getElementById('logout');
 let welcome = document.getElementById('welcome');
-let blogCreate = document.getElementById('blog-create');
 
 
 

@@ -10,7 +10,8 @@ let BBody = document.getElementById('BBody');
 let createBlogBut = document.getElementById('createBlogBut');
 
 let blogCreate = document.getElementById('blog-create');
-let userIdd = localStorage.getItem('userId');
+
+// let userIdd = localStorage.getItem('userId');
 
 // create a Blog
 
@@ -30,7 +31,7 @@ blogCreate.addEventListener("click", () => {
                 blogtitle: blogtitle,
                 bimage: bimage,
                 bbody: bbody,
-                userid:userIdd,
+                userid:userId,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

@@ -30,7 +30,7 @@
     align-items: center;
     border: 1bx solid black;
     background-color: rgb(193, 131, 49);
-    height: 30vh;
+    height: 40vh;
 }
 
 .text-area {
@@ -54,20 +54,25 @@
     color: rgb(36, 36, 36);
 }
 
-#containerprofile{
+
+
+#containerprofile {
     background-color: rgb(193, 131, 49);
 }
+
 @media screen and (max-width: 600px) {
     .profile-container {
         width: 100%;
         flex-direction: column;
         height: 60vh;
     }
-    .text-area-container{
+
+    .text-area-container {
         width: 100%;
         flex-direction: column;
     }
-    .sub-header{
+
+    .sub-header {
         width: 100%;
         flex-direction: column;
     }
