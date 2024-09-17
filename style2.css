@@ -34,15 +34,24 @@
 }
 
 .text-area {
+    align-items: center;
     display: flex;
+    justify-content: center;
     width: 70%;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .area {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 70%;
-    /* height: 50vh; */
+    height: 37vh;
+    align-items: flex-start;
 }
 
 .sub-header {
@@ -55,12 +64,13 @@
     color: rgb(36, 36, 36);
 }
 
-#blog-create{
+#blog-create {
     margin-bottom: 10px;
     width: 60%;
     text-align: center;
     background-color: brown;
     border: none;
+    align-self: center;
 }
 
 #containerprofile {
@@ -83,8 +93,19 @@
         width: 100%;
         flex-direction: column;
     }
+
     #containerprofile {
         width: 100%;
+    }
+
+    textarea#BBody {
+        width: 51vw;
+        /* align-self: end; */
+    }
+
+    #blog-create {
+        width: 90%;
+
     }
 
 
