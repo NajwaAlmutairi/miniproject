@@ -30,3 +30,9 @@ input:focus,
     border-color: black; 
     box-shadow: none; 
 }
+
+
+#loginbtn,
+#btn {
+  width: 100%;
+}
