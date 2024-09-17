@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        function loadNavbar() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                    const script = document.createElement('script');
+                    script.src = 'logout.js';
+                    document.body.appendChild(script);
+                });
+        }
+        document.addEventListener('DOMContentLoaded', loadNavbar);
+    </script>
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+    <div class="container">
+        <div class="profile-container">
+            <div class="image-profile-container">
+                <img src="https://www.svgrepo.com/show/7310/book-and-pen.svg" alt="Avatar" class="img-fluid my-5"
+                    style="width: 100px;" />
+            </div>
+            <div class="profile-info">
+                <label for="title">Blog title:</label>
+                <input type="text" id="title" placeholder="Blog title">
+                <label for="Bimage">Blog image:</label>
+                <input type="text" id="Bimage" placeholder="Blog image">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-area-container">
+            <div class="text-area">
+                <div class="area">
+                    <label for="BBody">Blog Body:</label>
+                    <textarea name="textarea" id="BBody" rows="5" cols="70"></textarea>
+                    <button id="blog-create">create</button>
+                    <p id="createBlogBut"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="addBlog.js"></script>
+
+</body>
+
+</html>
+
